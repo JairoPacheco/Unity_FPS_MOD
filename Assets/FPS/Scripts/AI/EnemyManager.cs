@@ -4,25 +4,31 @@ using UnityEngine;
 
 namespace Unity.FPS.AI
 {
+    public interface IEnemyController
+    {
+        void OrientTowards(Vector3 lookPosition);
+        GameObject gameObject { get;}
+    }
+
     public class EnemyManager : MonoBehaviour
     {
-        public List<EnemyController> Enemies { get; private set; }
+        public List<IEnemyController> Enemies { get; private set; }
         public int NumberOfEnemiesTotal { get; private set; }
         public int NumberOfEnemiesRemaining => Enemies.Count;
 
         void Awake()
         {
-            Enemies = new List<EnemyController>();
+            Enemies = new List<IEnemyController>();
         }
 
-        public void RegisterEnemy(EnemyController enemy)
+        public void RegisterEnemy(IEnemyController enemy)
         {
             Enemies.Add(enemy);
 
             NumberOfEnemiesTotal++;
         }
 
-        public void UnregisterEnemy(EnemyController enemyKilled)
+        public void UnregisterEnemy(IEnemyController enemyKilled)
         {
             int enemiesRemainingNotification = NumberOfEnemiesRemaining - 1;
 

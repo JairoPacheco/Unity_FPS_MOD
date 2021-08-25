@@ -60,7 +60,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2015434656898269656}
   - component: {fileID: 9087143436424816424}
-  - component: {fileID: 4752156053906186385}
+  - component: {fileID: 2857282583850849226}
   - component: {fileID: 6370966072896210225}
   - component: {fileID: 3464315327790461765}
   - component: {fileID: 7406548990343174644}
@@ -113,8 +113,8 @@ MonoBehaviour:
   SwapToNextWeapon: 0
   DelayAfterWeaponSwap: 0
   EyeColorMaterial: {fileID: 2100000, guid: e6fdfd4e017234d43ac116abee8fa90a, type: 2}
-  DefaultEyeColor: {r: 23.849056, g: 7.292185, b: 0, a: 1}
-  AttackEyeColor: {r: 32, g: 1.4610044, b: 0, a: 1}
+  DefaultEyeColor: {r: 42.722496, g: 1.5078529, b: 0, a: 1}
+  AttackEyeColor: {r: 31.999996, g: 1.5078533, b: 0, a: 1}
   BodyMaterial: {fileID: 2100000, guid: c3dc5a90c49c99142999f85d6b419d80, type: 2}
   OnHitBodyGradient:
     serializedVersion: 2
@@ -150,13 +150,12 @@ MonoBehaviour:
   DeathVfx: {fileID: 8950624839484268180, guid: 2a8f5052fe50f7b41b17149abb0f7414,
     type: 3}
   DeathVfxSpawnPoint: {fileID: 381893446485871685}
-  LootPrefab: {fileID: 2529580269645609534, guid: 9973c412032becb4ca116ca08be62edf,
-    type: 3}
+  LootPrefab: {fileID: 0}
   DropRate: 1
   PathReachingRangeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   AttackRangeColor: {r: 1, g: 0, b: 0, a: 1}
   DetectionRangeColor: {r: 0, g: 0, b: 1, a: 1}
---- !u!114 &4752156053906186385
+--- !u!114 &2857282583850849226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,16 +164,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2015434656898269652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1857b2df8de24b24190ce9e067d2e1e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f7223fe8d672ea42b8d393ee314be09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 320366457759794871}
   AttackStopDistanceRatio: 0.08
   RandomHitSparks:
-  - {fileID: 9125706537325074547}
-  - {fileID: 8158939429672774431}
   - {fileID: 3661562211460385405}
   - {fileID: 5625802328757436829}
+  - {fileID: 9125706537325074547}
+  - {fileID: 8158939429672774431}
   OnDetectVfx:
   - {fileID: 6104096765092005263}
   - {fileID: 1407167163009738010}
@@ -182,8 +181,8 @@ MonoBehaviour:
   OnDetectSfx: {fileID: 8300000, guid: 25722734eeccba042a18e26e376ca542, type: 3}
   MovementSound: {fileID: 0}
   PitchDistortionMovementSpeed:
-    Min: 1
-    Max: 1.5
+    Min: 0
+    Max: 0
 --- !u!114 &6370966072896210225
 MonoBehaviour:
   m_ObjectHideFlags: 0
