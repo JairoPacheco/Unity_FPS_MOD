@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{66f91775-83f6-84b6-1677-0b0b9a4aae09}</ProjectGuid>
+    <ProjectGuid>{dae838ec-87c9-fa10-ca09-83ebe4fc0359}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>fps.Editor</AssemblyName>
@@ -269,22 +269,22 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.FileSystem">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.connect.share@4.1.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.connect.share@4.1.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -635,33 +635,33 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="fps.Game.csproj">
-      <Project>{519c2a1e-d56c-db82-921a-79e0b98169a2}</Project>
+      <Project>{5b94cf55-8342-a7e0-f581-79dbb7623e91}</Project>
       <Name>fps.Game</Name>
     </ProjectReference>
     <ProjectReference Include="fps.Gameplay.csproj">
-      <Project>{6505ded9-0a8d-5bcb-c4c3-83226919ad4d}</Project>
+      <Project>{59fcb9e6-8558-0adc-78d5-1439d67783da}</Project>
       <Name>fps.Gameplay</Name>
     </ProjectReference>
     <ProjectReference Include="fps.AI.csproj">
-      <Project>{33c801a5-38ff-5585-887d-4a04e479384a}</Project>
+      <Project>{c7df11e5-4bd7-a7b5-700b-5220699d9c82}</Project>
       <Name>fps.AI</Name>
     </ProjectReference>
     <ProjectReference Include="fps.UI.csproj">
-      <Project>{e4f5394a-7aed-5f14-15d3-3b62eea7c1aa}</Project>
+      <Project>{215c49d1-b3ac-d0be-6474-4e8cebf45ffe}</Project>
       <Name>fps.UI</Name>
     </ProjectReference>
   </ItemGroup>

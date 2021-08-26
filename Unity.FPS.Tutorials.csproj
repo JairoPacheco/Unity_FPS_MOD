@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9a577fbd-0080-f9a4-c702-7e17039ce7c2}</ProjectGuid>
+    <ProjectGuid>{2f3adc1c-34b8-8d29-238e-3b6ac51672b5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.FPS.Tutorials</AssemblyName>
@@ -266,19 +266,19 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.FileSystem">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.connect.share@4.1.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.connect.share@4.1.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -626,21 +626,21 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Play.Publisher.Editor">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/ScriptAssemblies/Unity.Play.Publisher.Editor.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/ScriptAssemblies/Unity.Play.Publisher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InteractiveTutorials.Core">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/ScriptAssemblies/Unity.InteractiveTutorials.Core.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{bcccee2b-b2ce-047c-f285-7a4713d674fe}</Project>
+      <Project>{c08262ba-d632-034f-2209-d4fb09d86578}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>

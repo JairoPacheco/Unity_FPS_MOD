@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{33c801a5-38ff-5585-887d-4a04e479384a}</ProjectGuid>
+    <ProjectGuid>{c7df11e5-4bd7-a7b5-700b-5220699d9c82}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>fps.AI</AssemblyName>
@@ -36,17 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\FPS\Scripts\AI\SurvivorDetectionModule.cs" />
      <Compile Include="Assets\FPS\Scripts\AI\NavigationModule.cs" />
      <Compile Include="Assets\FPS\Scripts\AI\EnemyManager.cs" />
      <Compile Include="Assets\FPS\Scripts\AI\FollowPlayer.cs" />
      <Compile Include="Assets\FPS\Scripts\AI\EnemyTurret.cs" />
      <Compile Include="Assets\FPS\Scripts\AI\EnemyMobileSurvivor.cs" />
+     <Compile Include="Assets\FPS\Scripts\AI\EnemyMobile.cs" />
      <Compile Include="Assets\FPS\Scripts\AI\PatrolPath.cs" />
      <Compile Include="Assets\FPS\Scripts\AI\DetectionModule.cs" />
      <Compile Include="Assets\FPS\Scripts\AI\EnemyController.cs" />
-     <Compile Include="Assets\FPS\Scripts\AI\SurvivorDetectionModule.cs" />
      <Compile Include="Assets\FPS\Scripts\AI\EnemyControllerSurvivor.cs" />
-     <Compile Include="Assets\FPS\Scripts\AI\EnemyMobile.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -276,19 +276,19 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.FileSystem">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.connect.share@4.1.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.connect.share@4.1.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -636,15 +636,15 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/Dennis/Desktop/U/Semestre II - 2021/VR/FPS Mod/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/Dennis/Documents/GitHub/Unity_FPS_MOD/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="fps.Game.csproj">
-      <Project>{519c2a1e-d56c-db82-921a-79e0b98169a2}</Project>
+      <Project>{5b94cf55-8342-a7e0-f581-79dbb7623e91}</Project>
       <Name>fps.Game</Name>
     </ProjectReference>
   </ItemGroup>
