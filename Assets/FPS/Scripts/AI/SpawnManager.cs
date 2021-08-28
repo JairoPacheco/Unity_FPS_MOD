@@ -11,6 +11,8 @@ namespace Unity.FPS.AI
         public int enemiesPerWave = 5; // 0.09 * Round^2 + -0.0029*Round + 23.958 24 max; //How many enemies per wave
         public Transform[] spawnPoints;
         public int EnemiesEliminated{ get{return enemiesEliminated;} }
+        public int WaveNumber{ get{return waveNumber;} }
+        public float waveInterval = 2f;
 
         float nextSpawnTime = 0;
         int waveNumber = 1;
@@ -25,7 +27,7 @@ namespace Unity.FPS.AI
         void Start()
         {
             //Wait 10 seconds for new wave to start
-            newWaveTimer = 10;
+            newWaveTimer = waveInterval;
             waitingForWave = true;
         }
 
@@ -56,7 +58,7 @@ namespace Unity.FPS.AI
                     //Spawn enemy 
                     if(totalEnemiesSpawned < enemiesToEliminate)
                     {
-                        Transform randomPoint = spawnPoints[Random.Range(0, spawnPoints.Length - 1)];
+                        Transform randomPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
 
                         GameObject enemy = Instantiate(enemyPrefab, randomPoint.position, Quaternion.identity);
                         
@@ -70,7 +72,8 @@ namespace Unity.FPS.AI
             enemiesEliminated++;
             if(enemiesEliminated == enemiesToEliminate){
                 waitingForWave = true;
-                newWaveTimer = 5;
+                newWaveTimer = waveInterval;
+                waveNumber ++;
             }
         }
     }
