@@ -9,6 +9,7 @@ namespace Unity.FPS.AI
     [RequireComponent(typeof(Health), typeof(Actor), typeof(NavMeshAgent))]
     public class EnemyControllerSurvivor : MonoBehaviour, IEnemyController
     {
+        GameObject SpawnManager;
         [System.Serializable]
         public struct RendererIndexData
         {
@@ -120,6 +121,7 @@ namespace Unity.FPS.AI
 
         void Start()
         {
+            SpawnManager = GameObject.FindWithTag("GameLogic");
             m_EnemyManager = FindObjectOfType<EnemyManager>();
             DebugUtility.HandleErrorIfNullFindObject<EnemyManager, EnemyControllerSurvivor>(m_EnemyManager, this);
 
@@ -371,7 +373,8 @@ namespace Unity.FPS.AI
             {
                 Instantiate(LootPrefab, transform.position, Quaternion.identity);
             }
-
+            SpawnManager sp = SpawnManager.GetComponent<SpawnManager>();
+            sp.IncrementEnemiesEliminated();
             // this will call the OnDestroy function
             Destroy(gameObject, DeathDuration);
         }
