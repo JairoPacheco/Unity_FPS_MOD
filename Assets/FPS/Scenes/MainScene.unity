@@ -1889,6 +1889,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1912838646}
+  - component: {fileID: 1912838645}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: GameLogic
@@ -1896,6 +1897,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &1912838645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912838644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f05c46a035f6145a34ab97b743fff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 2015434656898269652, guid: 52e3a86797e6c1d49ab8b0df586fca00,
+    type: 3}
+  ObjectivePrefab: {fileID: 4288872174779106232, guid: 2cbb7e843e66d9f44ae64b0f3016e718,
+    type: 3}
+  spawnInterval: 1
+  enemiesPerRound: 5
+  spawnPoints:
+  - {fileID: 1982206315}
+  RoundInterval: 2
 --- !u!4 &1912838646
 Transform:
   m_ObjectHideFlags: 0
@@ -1915,6 +1937,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4477206535605542485, guid: 509d754db50222f46b673c4778f267e4,
     type: 3}
   m_PrefabInstance: {fileID: 1647969997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1982206315 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4416970914259543023, guid: dcd6716466fc94344b0094d89c21f795,
+    type: 3}
+  m_PrefabInstance: {fileID: 1194388664}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1993825780 stripped
 Transform:
