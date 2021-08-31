@@ -11,7 +11,7 @@ namespace Unity.FPS.Game
 
         public float RegenInterval = 1/30;
 
-        public float HealthAmount = 2f;
+        public float HealAmount = 20f;
 
         public Health Health { get; private set; }
         
@@ -45,7 +45,7 @@ namespace Unity.FPS.Game
                     Health.Heal(HealthAmount);
                     TimeLastHeal = Time.time;
                 } */
-                Health.Heal(HealthAmount * Time.deltaTime);
+                Health.Heal(HealAmount * Time.deltaTime);
             }
             CurrentHealth = Health.CurrentHealth;
         }
