@@ -50,7 +50,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6662471053486182746}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
@@ -850,6 +850,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserTrail
       objectReference: {fileID: 0}
+    - target: {fileID: 400394846411631765, guid: c6e20ffe6d2b946fb9896031aa048f90,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400394846411631766, guid: c6e20ffe6d2b946fb9896031aa048f90,
         type: 3}
       propertyPath: m_RootOrder
@@ -873,12 +878,12 @@ PrefabInstance:
     - target: {fileID: 400394846411631766, guid: c6e20ffe6d2b946fb9896031aa048f90,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7372774
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400394846411631766, guid: c6e20ffe6d2b946fb9896031aa048f90,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.67559016
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400394846411631766, guid: c6e20ffe6d2b946fb9896031aa048f90,
         type: 3}
@@ -893,7 +898,7 @@ PrefabInstance:
     - target: {fileID: 400394846411631766, guid: c6e20ffe6d2b946fb9896031aa048f90,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 85
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400394846411631766, guid: c6e20ffe6d2b946fb9896031aa048f90,
         type: 3}
