@@ -188,7 +188,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 44c5f76f80602024e82d3e5f3af4ee97, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.75
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -357,10 +357,10 @@ MonoBehaviour:
   - {fileID: 1407167163009738010}
   - {fileID: 8934028655093144013}
   OnDetectSfx: {fileID: 8300000, guid: 25722734eeccba042a18e26e376ca542, type: 3}
-  MovementSound: {fileID: 0}
+  MovementSound: {fileID: 8300000, guid: 44c5f76f80602024e82d3e5f3af4ee97, type: 3}
   PitchDistortionMovementSpeed:
-    Min: 0
-    Max: 0
+    Min: 1
+    Max: 1
 --- !u!1 &2201913640410082181
 GameObject:
   m_ObjectHideFlags: 0

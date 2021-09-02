@@ -16,7 +16,7 @@ namespace Unity.FPS.Zombie
 
         public float spawnInterval = 1; //Spawn new enemy each n seconds
         public int enemiesPerRound = 5; // 0.09 * Round^2 + -0.0029*Round + 23.958 24 max; //How many enemies per Round
-        public Transform[] spawnPoints;
+        public List<Transform> spawnPoints;
         public int EnemiesEliminated{ get{return enemiesEliminated;} }
         public int RoundNumber{ get{return roundNumber;} }
         public float RoundInterval = 3f;
@@ -38,7 +38,7 @@ namespace Unity.FPS.Zombie
             waitingForRound = true;
             enemiesToEliminate = roundNumber * enemiesPerRound;
             objective = Instantiate(ObjectivePrefab);
-            objective.GetComponent<ObjectiveSurvive>().initialize(1, 5);
+            objective.GetComponent<ObjectiveSurvive>().initialize(roundNumber, enemiesToEliminate);
         }
 
         // Update is called once per frame
@@ -68,7 +68,7 @@ namespace Unity.FPS.Zombie
                     //Spawn enemy 
                     if(totalEnemiesSpawned < enemiesToEliminate)
                     {
-                        Transform randomPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+                        Transform randomPoint = spawnPoints[Random.Range(0, spawnPoints.Count)];
 
                         GameObject enemy = Instantiate(enemyPrefab, randomPoint.position, Quaternion.identity);
                         
