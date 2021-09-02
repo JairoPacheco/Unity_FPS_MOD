@@ -33,7 +33,8 @@ namespace Unity.FPS.Game
             source.minDistance = rolloffDistanceMin;
             source.Play();
 
-            source.outputAudioMixerGroup = GetAudioGroup(audioGroup);
+            if(audioGroup != AudioGroups.DamageTick)
+                source.outputAudioMixerGroup = GetAudioGroup(audioGroup);
 
             TimedSelfDestruct timedSelfDestruct = impactSfxInstance.AddComponent<TimedSelfDestruct>();
             timedSelfDestruct.LifeTime = clip.length;

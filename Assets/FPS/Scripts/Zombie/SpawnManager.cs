@@ -30,10 +30,13 @@ namespace Unity.FPS.Zombie
         int enemiesEliminated = 0;
         int totalEnemiesSpawned = 0;
 
+        GameObject player;
+
         // Start is called before the first frame update
         void Start()
         {
             //Wait 10 seconds for new Round to start
+            player = GameObject.Find("Player");
             newRoundTimer = RoundInterval;
             waitingForRound = true;
             enemiesToEliminate = roundNumber * enemiesPerRound;
@@ -68,7 +71,14 @@ namespace Unity.FPS.Zombie
                     //Spawn enemy 
                     if(totalEnemiesSpawned < enemiesToEliminate)
                     {
-                        Transform randomPoint = spawnPoints[Random.Range(0, spawnPoints.Count)];
+                        List<Transform> temp = new List<Transform>();
+                        foreach(Transform sp in spawnPoints)
+                        {
+                            if( Vector3.Distance(player.transform.position, sp.transform.position) < 50f){
+                                temp.Add(sp);
+                            }
+                        }
+                        Transform randomPoint = temp[Random.Range(0, temp.Count)];
 
                         GameObject enemy = Instantiate(enemyPrefab, randomPoint.position, Quaternion.identity);
                         
@@ -90,5 +100,6 @@ namespace Unity.FPS.Zombie
                 objective.GetComponent<ObjectiveSurvive>().initialize(roundNumber, enemiesToEliminate);
             }
         }
+        
     }
 }
